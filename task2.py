@@ -1,94 +1,19 @@
-file = input("Enter text to write to the file: ")
-file = open('output.txt','w')
-writing_file = file.write('Enter text to write to the file:')
-file.close()
+file_text_1 = input("Enter text to write to the file: ")
 
+file1 = open( 'output.txt', 'w' )
+file1.write(file_text_1 + "\n")
+file1.close()
+print("Data successfully written to output.txt\n")
 
-file = open('output.txt','a')
-appending_file = file.write(' Hello, python!')
+file_text_2 = input("Enter additional text to append: ")
 
-file = open('output.txt','r')
-reading_file = file.read()
-print(reading_file)
+file2 = open("output.txt", "a")
+file2.write(file_text_2 + "\n")
+file2.close()
+print("Data successfully appended.\n")
 
-file = open('output.txt','w')
-writing_file = file.write('Data successfully written to the')
-file.close()
+print("Final content of output.txt:")
+file3 = open("output.txt", "r")
+print(file3.read())
+file3.close()
 
-
-
-file = open('output.txt','a')
-appending_file = file.write(' output.txt')
-
-
-file = open('output.txt','r')
-reading_file = file.read()
-print(reading_file)
-
-print()
-file = open('output.txt','w')
-writing_file = file.write('Enter additional text to append:')
-file.close()
-
-
-
-file = open('output.txt','a')
-appending_file = file.write(' learning file handling in python.')
-
-
-file = open('output.txt','r')
-reading_file = file.read()
-print(reading_file)
-
-
-file = open('output.txt','w')
-writing_file = file.write('Data successfully')
-file.close()
-
-
-
-file = open('output.txt','a')
-appending_file = file.write(' appended.')
-
-file = open('output.txt','r')
-reading_file = file.read()
-print(reading_file)
-print()
-file = open('output.txt','w')
-writing_file = file.write('final content of ')
-file.close()
-
-
-
-file = open('output.txt','a')
-appending_file = file.write('output.txt')
-
-file = open('output.txt','r')
-reading_file = file.read()
-print(reading_file)
-
-file = open('output.txt','w')
-writing_file = file.write('Hello,')
-file.close()
-
-
-
-file = open('output.txt','a')
-appending_file = file.write('python!')
-
-file = open('output.txt','r')
-reading_file = file.read()
-print(reading_file)
-
-file = open('output.txt','w')
-writing_file = file.write('Learning file')
-file.close()
-
-
-
-file = open('output.txt','a')
-appending_file = file.write('handling in python.')
-
-file = open('output.txt','r')
-reading_file = file.read()
-print(reading_file)
